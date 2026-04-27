@@ -1,0 +1,188 @@
+.theme__main__banner{
+    background: url(../img/hero/hero_02.png) no-repeat, rgba(255, 227, 193, 0.1);
+    background-size: cover;
+    background-position: 50% -200px;
+    @media #{$max-lg} {
+        background:none;
+    }
+
+    .hero__slider__one{
+        .shapes{
+            position: relative;
+            @media #{$max-xl} {
+                display: none;
+            }
+
+            .shape__01{
+                position: absolute;
+                left: 18%;
+                top: 139px;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__02{
+                position: absolute;
+                right: 20%;
+                top: 137px;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__03{
+                position: absolute;
+                left: 20rem;
+                bottom: -65rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__04{
+                position: absolute;
+                left: 34.8%;
+                top: 47rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__05{
+                position: absolute;
+                right:0;
+                top: 31rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__06{
+                position: absolute;
+                right: 16rem;
+                top: 64rem;
+                @media #{$max-lg} {
+                   display: none;
+                }
+            }
+            .shape__07{
+                position: absolute;
+                left: 25px;
+                top: 40rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+        }
+    }
+    .theme__content{
+        .ht_btn{
+            padding: 18px 38px;
+            border-radius: 5px;
+        }
+    }
+    .hero__img {
+        width: 100%;
+        img{
+        position: relative;
+        max-width: 916px;
+        @media #{$max-lg} {
+            max-width: 100%;
+        }
+        }
+    }
+}
+.theme__one__banner{
+    background: none;
+    .main__banner__bg{
+        background: rgba($color: #FFE3C1, $alpha: 0.1);
+        margin: 0 81px;
+        @media #{$max-lg} {
+            margin:0;
+        }
+    }
+    .main__banner__bg{
+        height: auto;
+    }
+    .hero__img{
+        height: 900px;
+        @media #{$max-lg} {
+            height: auto;
+        }
+        .hero__banner__two__img{
+            position: absolute;
+            right: 0;
+            @media #{$max-lg} {
+                position: relative;
+            }
+        }
+    }
+    .theme__content{
+        margin-left: 80px;
+        @media #{$max-xl} {
+            margin-left:0;
+        }
+    }
+    .hero__slider__one{
+        .shapes{
+            @media #{$max-xl} {
+                display: none;
+            }
+
+            .shape__01{
+                position: absolute;
+                left: 85%;
+                top: 721px;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__02{
+                position: absolute;
+                right: 45%;
+                top: 46px;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__03{
+                position: absolute;
+                left: 97rem;
+                bottom: -10rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+            .shape__04{
+                position: absolute;
+                left: 70.8%;
+                top: 49rem;
+                @media #{$max-lg} {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.theme__two__banner{
+    background: url(../img/hero/banner_three__bg.png) no-repeat, #1b212f;
+    background-size: auto;
+    background-position: -18rem 70%;
+    .sticky-menu{background: $black;}
+    .main-menu ul li a{
+        color: $white;
+    }
+    .banner__main__title{
+        color: $white;
+        &::before{
+            display: none;
+        }
+    }
+    .banner__description{color: $white;}
+    .ht_btn::before{background: $green;}
+    .ht_btn2{color: $white;}
+    .hero__img{
+        bottom: -80px;
+        left: -60px;
+        @media #{$max-lg} {
+            bottom:0;
+            left:0;
+        }
+    }
+}

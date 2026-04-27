@@ -1,0 +1,170 @@
+// choose all section  style are here
+
+.choose__section{
+    background: url(../img/chose/choose__bg__01.png) no-repeat;
+    background-size: auto;
+    background-position: 34% 36%;
+    @media #{$max-lg} {
+        background: none;
+    }
+    .choose__main__1{
+        position: relative;
+        right: 4rem;
+        max-width: 824px;
+        @media #{$max-xl} {
+            width:100%;
+        }
+    }
+    .choose__content__wrapper{
+        padding-left:50px;
+        @media #{$max-xl} {
+            padding-left: 0;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        .choose__type{
+            background: $white;
+            padding:15px 20px;
+            margin-right:20px;
+            border-radius:10px;
+            width: 280px;
+            box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+            -webkit-box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+            -moz-box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+        }
+        .icon{
+            text-align: center;
+            padding:10px;
+            background: #FF723A;
+            border-radius:10px;
+            height: 60px;
+            width: 60px;
+        }
+        .icon__two{background:rgba($color: #FF8700, $alpha: 0.10);}
+        .icon_three{background:rgba($color: #FF8096, $alpha: 0.10);}
+        .icon_four{background:rgba($color: #0084B4, $alpha: 0.10);}
+        .choose__type__text{
+            margin-left: 20px;
+            h5{
+                font-size: 24px;
+                font-weight: 700;
+                @include transition(0.3s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        .choose__btn{
+            .ht_btn{border-radius: 5px;}
+        }
+    }
+}
+.choose__section__two{
+    background: url(../img/chose/choose__bg__02.png) no-repeat;
+    @media #{$max-lg} {
+        background: none;
+    }
+    .choose__content__wrapper{
+       padding-left: 0;
+       padding-right: 55px;
+    }
+    .choose__img__wrapper{
+        &::after{
+            content:url('../img/chose/choose__03.png');
+            position: absolute;
+            left: -175px;
+            bottom: -73px;
+            @media #{$max-lg} {
+                display: none;
+            }
+        }
+    }
+    .choose__main__1{
+        left: 0;
+    }
+}
+.choose__section__three{
+    background: url(../img/chose/choose__three__04.png) no-repeat;
+    background-size: auto;
+    background-position: 100% 0%;
+    .choose__content__wrapper {
+        padding-left: 0px;
+    }
+    .sub__title__two{text-transform: uppercase;font-weight: 700;}
+    .skill__wrapper{
+        .skill-category{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom:30px;
+            .float-end{
+                color: $theme-color;
+                position: relative;
+                right: 6%;
+                background: $white;
+                padding:5px 8px;
+                border-radius:50px;
+                box-shadow: -2px 5px 14px -7px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -2px 5px 14px -7px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px 5px 14px -7px rgba(0,0,0,0.75);
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 16px;
+                    z-index: 1;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid white;
+                }
+            }
+            .float-end-2{
+                right: 10%;
+            }
+            .float-end-3{
+                right:2%;
+            }
+        }
+        .progress{
+            background:rgba($color: $theme-color, $alpha: 0.1);
+            height: 5px;
+            .progress-bar{
+                background:rgba($color: $theme-color, $alpha: 1.0);
+                height: 5px;
+                width: 92%;
+            }
+            .progress-bar-2{
+                width: 90%;
+            }
+            .progress-bar-3{
+                width: 98%;
+            }
+        }
+    }
+    .choose__img__wrapper{
+        .choose__main__1{right: 0;}
+        .choose__main__2{
+            position: absolute;
+            left: 47%;
+            top: -39%;
+            @media #{$max-lg} {
+                display: none;
+            }
+        }
+        .choose__main__3{
+            position: absolute;
+            left: 68%;
+            bottom: -11%;
+            @media #{$max-lg} {
+                display: none;
+            }
+        }
+    }
+}

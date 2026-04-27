@@ -1,0 +1,139 @@
+.service__section{
+    background:url('../img/service/service__bg__01.png') no-repeat;
+    background-size: cover;
+    .service__thumb{
+        min-height: 330px;
+        padding:30px 20px;
+        background: $white;
+        @include transition(0.3s);
+        box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+        -webkit-box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+        -moz-box-shadow: -3px -20px 29px -23px rgba(0,0,0,0.12);
+        &:hover .service__title{
+            color: $theme-color;
+        }
+    }
+    .service__img__one{
+        width: 85px;
+        line-height: 3;
+        border-radius:10px;
+        background:rgba($color: $theme-color, $alpha: 1.0); 
+        padding: 14px;
+        text-align: center;
+    }
+    .service__img__two{
+        background:rgba($color: $theme-color, $alpha: 0.05); 
+    }
+    .service__title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .service__designation{
+        font-size: 16px;
+    }
+}
+.service__section{
+    background:url('../img/service/service__two__01.png') no-repeat;
+    background-position: -4% 57%;
+    background-size: auto;
+    .service__img__one{
+        border-radius:50%;
+    }
+}
+.service__section__three{
+    background:url('../img/service/service__three__bg.png') rgba($color: #FFE3C1, $alpha: 0.1) no-repeat;
+    .sub__title__two{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .swiper-pagination-bullet{
+        margin-top:50px;
+        height: 13px;
+        width: 13px;
+        background: rgba($color: #FF471A, $alpha: 0.1);
+        border-radius:50%;
+        @include transition(0.3s);
+    }
+    .swiper-pagination-bullet-active{
+        background: rgba($color: #FF471A, $alpha: 1.0);
+    }
+}
+.project__details__area{
+    .single__info__box{
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        width: 64%;
+        .widget__title__two{color: $white;}
+        .icon{
+            width:48px;
+            height: 48px;
+            background: $theme-color;
+            color: $white;
+            text-align:center;
+            line-height:48px;
+            border-radius:50%;
+            @include transition(0.3s);
+            &:hover {
+                background: $white;
+                color: $theme-color;
+            }
+        }
+        .contact_info{
+            margin-left: 20px;
+            font-size:14px;
+            color: $white;
+            .contact{
+                font-size:20px;
+                font-weight: 700;
+            }
+        }
+    }
+    .project__details__wrapper{
+        p{font-size: 18px;}
+        .about__content__wrapper{
+            height: 110px;
+            padding: 20px;
+            border-radius: 10px;
+            background: $white;
+            box-shadow: 11px 25px 83px -17px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 11px 25px 83px -17px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 11px 25px 83px -17px rgba(0, 0, 0, 0.1);
+            .icon{
+                width: 70px;
+                height: 70px;
+                background: rgba($color: #8E66FF, $alpha: 0.1);
+                text-align: center;
+                line-height: 70px;
+                border-radius: 10px;
+                @include transition(0.3s);
+                img{
+                    transition: filter 0.3s;
+                    filter: brightness(100%);
+                }
+                &:hover {
+                    background: $theme-color;
+                    img{
+                        color: white;
+                        filter: brightness(100) contrast(1) hue-rotate(121deg) invert(0) saturate(1) sepia(1);
+                    }
+                }
+            }
+            .icon__two{background: rgba($color: #FF3E4A, $alpha: 0.1);}
+            .icon__three{background: rgba($color: #FF8700, $alpha: 0.1);}
+            .about__type_text{
+                margin-left: 20px;
+                h5{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $black;
+                }
+            }
+        }
+    }
+    .watch__video{
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50px, 50px);
+    }
+}

@@ -1,0 +1,96 @@
+.feedback-section{
+    .feedback__main__content{
+        background: url(../img/testimonial/screen__03.png) center center no-repeat;
+    }
+    .feedback__rapper{
+        padding: 150px 124px;
+        @media #{$max-xl} {
+            padding: 150px 0;
+        }
+
+    }
+    .feedback-slider,
+    .section__title{padding: 30px 0px;}
+    .sub__title__two{
+        color: $theme-color;
+        font-weight: 500;
+        font-style: 20px;
+    }
+    .section__title__main{
+        color: $black;
+        font-weight: 700;
+        font-size: 46px;
+    }
+    .screen__01{
+        position: absolute;
+        left: 170px;
+        top: 81px;
+        @media #{$max-xl} {
+            left:0px;
+        }
+        @media #{$max-lg} {
+            display: none;
+        }
+    }
+    .screen__02{
+        position: absolute;
+        right: 270px;
+        top: 211px;
+        @media #{$max-xl} {
+            right:0px;
+        }
+        @media #{$max-lg} {
+            display: none;
+        }
+    }
+    .shape__001{
+        position: absolute;
+        left:66px;
+        top: 27px;
+        @media #{$max-xl} {
+            display: none;
+        }
+    }
+    .shape__002{
+        position: absolute;
+        right: 130px;
+        top: 0;
+        @media #{$max-xl} {
+            display: none;
+        }
+    }
+}
+.testimonial__three{
+    .sub__title__two{font-size: 20px;line-height: 20px;font-weight: 700;text-transform: uppercase;}
+    .feedback-block-six{
+        p{font-size: 32px;line-height: 50px;font-weight: 700;color: $black;}
+        h5{font-size: 24px;line-height: 56px;font-weight: 700;color: $black;}
+        span{font-size: 18px;line-height: 22px;}
+    }
+    // team slider scss==========>>>>>>
+    .swiper, .swiper-container{
+        overflow-y: visible;
+    }
+    .swiper-next,
+    .swiper-prev{
+        width: 60px;
+        line-height: 60px;
+        background: rgba($color: #FF471A, $alpha: 0.1);
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+        font-weight: 900;
+        color: $theme-color;
+        margin-right:20px;
+        border-radius:50%;
+        @include transition(0.3s);
+        i{
+            font-weight: 700;
+        }
+    }
+    .swiper-next:hover,
+    .swiper-prev:hover{
+        background: rgba($color: #FF471A, $alpha: 1.0);
+        color: $white;
+    }
+}
