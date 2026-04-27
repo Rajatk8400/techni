@@ -1,0 +1,18 @@
+[package]
+name = "rajatk8400/techni"
+version = "0.1.0"
+description = "NexGen Systems website"
+
+[dependencies]
+"php/php" = "8.3.4"
+
+[[command]]
+name = "php-server"
+module = "php/php:php"
+runner = "wasi"
+
+[command.annotations.wasi]
+main-args = ["-S", "0.0.0.0:8080", "-t", "/app"]
+
+[fs]
+"/app" = "."

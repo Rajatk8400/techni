@@ -1,0 +1,37 @@
+// footer section all style from here==============
+.footer__bg__one{
+    background:rgba($color: #FFE3C1, $alpha: 0.1)
+}
+.footer__bg_two{background: none;}
+.footer__widget{
+    ul{list-style: none; margin: 0;padding: 0;}
+    li{padding:10px 0;}
+    a{  font-size: 18px;
+        @include transition(0.3s);
+        &:hover{color: $theme-color;}
+    }
+    h3{
+        font-size: 30px;
+        line-height: 46px;
+        font-weight: 900;
+    }
+    .subscribe__form{
+        border:1px solid #E9E9E9;
+        border-radius: 5px;
+        input{height: 60px;}
+        .submit-btn{
+            background: $theme-color;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0 21px;
+            top: 5px;
+            right: 5px;
+        }
+    }
+}
+.footer__contact{
+    ul li a{
+        font-size: 20px;
+    }
+
+}
